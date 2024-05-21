@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: white;
+  margin-inline: 2.5rem;
+}
+nav{
+  position: sticky;
+  top:0;
+}
+.navbar {
+  /* background: #333; */
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar-logo a img{
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin-left:30rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.navbar-item {
+  margin-left: 3.5rem;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-size:13px;
+}
+.navbar-icon img{
+  height: 50px;
+  width: 70px;
+}
+.Home{
+  display: flex;
+  gap:40px;
+  margin-top: 50px;
+}
+.Home img{
+  width:400px;
+  height: 590px;
+}
+.product-name{
+  margin-top: 2rem;
+  font-size:xx-large;
+  font-weight: bold;
+}
+.right-bar{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap :10px;
 }
-
-.App-link {
-  color: #61dafb;
+.ingredients{
+  margin-top:30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quantity{
+  margin-top:30px;
+}
+span{
+  font-weight: bold;
+}
+.ml{
+  border:  1px solid burlywood;
+  padding: 8px;
+  color: burlywood;
+  font-weight: normal;
+  margin-inline: 5px;
+}
+.btn{
+  background-color: burlywood;
+  color: black;
+  padding: 8px;
+  width: 150px;
+  margin-top: 25px;
+}
+.msg{
+  border: 1px solid white;
+  padding: 8px;
+}
+.reviews{
+  display: flex;
+  gap:30rem;
+  margin-top: 50px;
+}
+.reviews img{
+  height: 300px;
+  width: 600px;
 }
